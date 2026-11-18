@@ -6,5 +6,6 @@ Frontend/dist/
 Backend/data/*.db
 Backend/data/*.db-shm
 Backend/data/*.db-wal
+Submission_Package/
 .env
 .DS_Store
