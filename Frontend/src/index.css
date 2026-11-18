@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TipTap / ProseMirror Paper Canvas Typography */
+.ProseMirror {
+  outline: none;
+  min-height: 560px;
+  line-height: 1.75;
+  color: #1e293b;
+  font-size: 1.025rem;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #94a3b8;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.ProseMirror h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.ProseMirror h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #0f172a;
+  margin-top: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.ProseMirror h3 {
+  font-size: 1.225rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1e293b;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ProseMirror p {
+  margin-bottom: 0.75rem;
+}
+
+.ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.ProseMirror li {
+  margin-bottom: 0.25rem;
+}
+
+.ProseMirror li p {
+  margin-bottom: 0.2rem;
+}
+
+.ProseMirror blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 1rem;
+  color: #475569;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.ProseMirror u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+}

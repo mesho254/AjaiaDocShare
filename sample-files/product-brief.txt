@@ -1,0 +1,8 @@
+Ajaia Internal Productivity Brief
+
+Teams move fastest when they can turn existing rough notes into shared, living documents without formatting friction.
+
+Key Principles:
+1. Fast drafting with familiar rich-text controls and keyboard shortcuts.
+2. Effortless file import from plain text, Markdown, and Word documents.
+3. Transparent ownership and sharing boundaries so everyone knows who owns a document and who can edit.
