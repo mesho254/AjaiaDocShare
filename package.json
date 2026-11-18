@@ -6,7 +6,7 @@
     "node": ">=22.5.0"
   },
   "scripts": {
-    "build": "npm install --prefix Frontend && npm run build --prefix Frontend && npm install --prefix Backend && npm run build --prefix Backend",
+    "build": "npm install --include=dev --prefix Frontend && npm run build --prefix Frontend && npm install --include=dev --prefix Backend && npm run build --prefix Backend",
     "start": "npm run start --prefix Backend",
     "test": "npm test --prefix Backend"
   }

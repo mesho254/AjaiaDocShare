@@ -3,10 +3,8 @@ services:
     name: ajaia-docs
     runtime: node
     plan: free
-    buildCommand: npm run build
-    startCommand: npm run start
+    buildCommand: npm install --include=dev --prefix Frontend && npm run build --prefix Frontend && npm install --include=dev --prefix Backend && npm run build --prefix Backend
+    startCommand: npm run start --prefix Backend
     envVars:
       - key: NODE_VERSION
         value: 24.14.0
-      - key: NODE_ENV
-        value: production

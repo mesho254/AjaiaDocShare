@@ -6,13 +6,14 @@ COPY package.json ./
 COPY Backend/package*.json ./Backend/
 COPY Frontend/package*.json ./Frontend/
 
-RUN cd Frontend && npm install
-RUN cd Backend && npm install
+RUN cd Frontend && npm install --include=dev
+RUN cd Backend && npm install --include=dev
 
 COPY Frontend ./Frontend
 COPY Backend ./Backend
 
 RUN cd Frontend && npm run build
+RUN cd Backend && npm run build
 
 EXPOSE 4000
 ENV PORT=4000
